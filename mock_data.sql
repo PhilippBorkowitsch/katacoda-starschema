@@ -2,7 +2,7 @@ COPY Procduction_plants(
   plantid,
   plantname,
   country
-) FROM './mock_data/Production_plants.csv'
+) FROM './usr/src/katacoda-starschema/mock_data/Production_plants.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -14,7 +14,7 @@ COPY Persons(
   birthday,
   gender,
   comment
-) FROM './mock_data/Persons.csv'
+) FROM './usr/src/katacoda-starschema/mock_data/Persons.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -26,20 +26,20 @@ COPY Vehicles(
   production_date,
   manufacturer,
   model
-) FROM './mock_data/Vehicles.csv'
+) FROM './usr/src/katacoda-starschema/mock_data/Vehicles.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY Sales_persons(
   vehicle_identifier,
   userid 
-) FROM './mock_data/Sales_Persons.csv'
+) FROM './usr/src/katacoda-starschema/mock_data/Sales_Persons.csv'
 DELIMITER ','
 CSV HEADER;
 
 COPY Owners(
   vehicle_identifier,
   userid 
-) FROM './mock_data/Owners.csv'
+) FROM './usr/src/katacoda-starschema/mock_data/Owners.csv'
 DELIMITER ','
 CSV HEADER;

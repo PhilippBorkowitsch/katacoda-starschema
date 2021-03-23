@@ -2,7 +2,7 @@ CREATE TABLE Persons (
     userid SERIAL PRIMARY KEY,
     lastname VARCHAR(32) NOT NULL,
     firstname VARCHAR(32) NOT NULL,
-    location VARCHAR(32),
+    location VARCHAR(64),
     birthday DATE,
     gender CHAR(1) NOT NULL,
     comment VARCHAR(100)

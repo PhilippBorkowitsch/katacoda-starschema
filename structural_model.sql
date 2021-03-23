@@ -8,6 +8,12 @@ CREATE TABLE Persons (
     comment VARCHAR(100)
 );
 
+CREATE TABLE Production_plants (
+    plantid SERIAL PRIMARY KEY,
+    plantname VARCHAR(32),
+    country VARCHAR(32)
+);
+
 CREATE TABLE Vehicles (
     vehicle_identifier SERIAL PRIMARY KEY,
     sales_date DATE,
@@ -16,12 +22,6 @@ CREATE TABLE Vehicles (
     production_date DATE,
     manufacturer INT REFERENCES Production_plants(plantid),
     model VARCHAR(5)
-);
-
-CREATE TABLE Production_plants (
-    plantid SERIAL PRIMARY KEY,
-    plantname VARCHAR(32),
-    country VARCHAR(32)
 );
 
 CREATE TABLE Sales_Persons (

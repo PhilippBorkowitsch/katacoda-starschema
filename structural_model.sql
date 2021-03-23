@@ -1,6 +1,3 @@
-CREATE DATABASE starschema;
-USE DATABASE starschema;
-
 CREATE TABLE Persons (
     userid SERIAL PRIMARY KEY,
     lastname VARCHAR(32) NOT NULL,

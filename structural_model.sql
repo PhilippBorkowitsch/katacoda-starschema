@@ -32,4 +32,4 @@ CREATE TABLE Sales_Persons (
 CREATE TABLE Owners (
     vehicle_identifier INT REFERENCES Vehicles(vehicle_identifier),
     userid INT REFERENCES Persons(userid)
-)
+);

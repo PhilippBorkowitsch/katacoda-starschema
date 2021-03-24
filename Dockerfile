@@ -5,7 +5,7 @@ LABEL org.label-schema.name="Katacoda Star-Schema"
 LABEL org.label-schema.description="PostgreSQL with example data for star schema demonstration"
 
 RUN apt-get update -y -qq && \
-    apt-get -y -qq install git vim nano
+    apt-get -y -qq install git
 
 
 WORKDIR /usr/src
